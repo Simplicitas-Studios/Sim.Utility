@@ -1,0 +1,27 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.sim.utility/Editor/SerializableGuidEditorStyles.uss?fileID=7433441132597879392&amp;guid=3253c6c306f35454db12869030cd77de&amp;type=3#SerializableGuidEditorStyles"/>
+    <engine:VisualElement name="GuidDisplayContainer" data-source-type="Sim.Utility.Editor.SerializableGuidEditorViewModel, Sim.Utility.Editor" picking-mode="Ignore" class="guid-display-container">
+        <engine:Label text="Label" name="lbPropertyName" picking-mode="Ignore" style="flex-grow: 0.2;">
+            <Bindings>
+                <engine:DataBinding property="text" data-source-path="PropertyName" binding-mode="ToTarget"/>
+            </Bindings>
+        </engine:Label>
+        <engine:Label text="Label" name="lbReadonlyValue" selectable="true" style="flex-grow: 0.8;">
+            <Bindings>
+                <engine:DataBinding property="text" data-source-path="Guid" binding-mode="ToTarget"/>
+                <engine:DataBinding property="style.display" data-source-path="IsReadonly" binding-mode="ToTarget"/>
+            </Bindings>
+        </engine:Label>
+        <engine:TextField name="tfValue" style="flex-grow: 0.8;">
+            <Bindings>
+                <engine:DataBinding property="style.display" data-source-path="IsReadonly" binding-mode="ToTarget" source-to-ui-converters="Inverse-BoolVisibility"/>
+                <engine:DataBinding property="value" data-source-path="Guid" binding-mode="TwoWay"/>
+            </Bindings>
+        </engine:TextField>
+        <Sim.Faciem.BindableButton text="↻" enable-rich-text="false" name="btRefresh">
+            <Bindings>
+                <engine:DataBinding property="Command" data-source-path="RegenerateId" data-source-type="Sim.Utility.Editor.SerializableGuidEditorViewModel, Sim.Utility.Editor" binding-mode="ToTarget"/>
+            </Bindings>
+        </Sim.Faciem.BindableButton>
+    </engine:VisualElement>
+</engine:UXML>

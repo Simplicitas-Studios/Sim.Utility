@@ -1,0 +1,20 @@
+{
+    "name": "Sim.Utility.Editor",
+    "rootNamespace": "Sim.Utility.Editor",
+    "references": [
+        "GUID:73131d858481d53408ae35d0e5a78385",
+        "GUID:0256ac6985bf6624da798665f1d64436",
+        "GUID:c68e2f7abac45cd409bf1e2a2e91700e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
