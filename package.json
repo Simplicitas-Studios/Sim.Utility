@@ -1,0 +1,19 @@
+{
+  "name": "com.sim.utility",
+  "version": "1.0.0-alpha.1",
+  "displayName": "Sim.Utility",
+  "description": "Utility Framework for Simplicitas Unity Packages",
+  "unity": "6000.0",
+  "dependencies": {
+    "com.sim.faciem": "1.0.0-alpha.1"
+  },
+  "keywords": [
+    "Unity",
+    "Simplicitas",
+  ],
+  "author": {
+    "name": "Simplicitas-Studios",
+    "email": "pasdaa13@gmail.com",
+    "url": "https://github.com/Simplicitas-Studios"
+  }
+}
