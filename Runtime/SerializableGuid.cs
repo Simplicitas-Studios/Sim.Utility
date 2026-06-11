@@ -206,22 +206,7 @@ namespace Sim.Dispositio.Shared
         /// <inheritdoc />
         public override int GetHashCode()
         {
-            if (_cashedHashCode != -1)
-            {
-                return _cashedHashCode;
-            }
-
-            unchecked // Overflow is fine, just wrap.
-            {
-                // Choose large primes to avoid hashing collisions.
-                const int HashingBase = (int)2166136261;
-                const int HashingMultiplier = 16777619;
-
-                int hash = HashingBase;
-                hash = (hash * HashingMultiplier) ^ Instance.GetHashCode();
-                _cashedHashCode = hash;
-                return hash;
-            }
+            return Instance.GetHashCode();
         }
 
         /// <inheritdoc />
