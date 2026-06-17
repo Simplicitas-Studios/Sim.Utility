@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Sim.Dispositio.Shared;
 
-namespace Sim.Dispositio.Shared
+namespace Sim.Utility
 {
     public enum Nil
     {

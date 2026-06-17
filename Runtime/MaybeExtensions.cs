@@ -1,4 +1,5 @@
 ﻿using System;
+using Sim.Utility;
 
 namespace Sim.Dispositio.Shared
 {
