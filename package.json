@@ -4,9 +4,7 @@
   "displayName": "Sim.Utility",
   "description": "Utility Framework for Simplicitas Unity Packages",
   "unity": "6000.0",
-  "dependencies": {
-    "com.sim.faciem": "1.0.0-alpha.1"
-  },
+  "dependencies": {},
   "keywords": [
     "Unity",
     "Simplicitas"

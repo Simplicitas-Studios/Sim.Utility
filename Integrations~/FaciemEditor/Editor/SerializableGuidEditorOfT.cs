@@ -4,7 +4,6 @@ using R3;
 using Sim.Dispositio.Shared;
 using Sim.Faciem.Commands;
 using Sim.Faciem.Shared;
-using Sim.Utility.Editor.Editor;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -13,12 +12,15 @@ namespace Sim.Utility.Editor
 {
     public abstract class SerializableGuidEditor<T> : PropertyDrawer where T : SerializableGuid, new()
     {
+        private const string ViewAssetGuid = "8cc1f80178ade534b843b4f01cc72afb";
+
         protected bool DrawLabel { get; set; } = true;
 
         public override VisualElement CreatePropertyGUI(SerializedProperty property)
         {
-            var root = AssetUtil.Load<VisualTreeAsset>("Editor/SerializableGuidEditorView.uxml", StaticPackageInfo.SimUtility)
-                .Instantiate();
+            string viewPath = AssetDatabase.GUIDToAssetPath(ViewAssetGuid);
+            VisualTreeAsset viewAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(viewPath);
+            TemplateContainer root = viewAsset.Instantiate();
 
             var usage = fieldInfo.GetCustomAttribute<IdUsageAttribute>()?.Usage ?? IdUsage.Reference;
 
