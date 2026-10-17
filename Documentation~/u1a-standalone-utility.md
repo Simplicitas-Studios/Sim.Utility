@@ -1,5 +1,9 @@
 # U1a — Standalone Utility and optional Faciem inspectors
 
+**Latest verdict: NOT MERGE-READY.** The [final pinned integration attempt](u1a-final-integration-validation.md)
+resolved the optional package but failed compilation before test discovery/execution.
+The historical passing core evidence below is unchanged; it is not integration acceptance.
+
 ## Status and approved boundary
 
 Implementation for review, not a release or deployment. Related audit:

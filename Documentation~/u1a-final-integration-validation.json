@@ -1,0 +1,289 @@
+{
+  "verdict": "NOT MERGE-READY; integration blocked before test discovery/execution",
+  "reviewedUtilityHead": "04ea8da9accd0537860da7d66f3eb7d47d8ca83c",
+  "utilityBase": "29354fafd28a59896f6f7f541fbe137b5a3d6a6b",
+  "faciemPin": "7c7c9fc8a1a41477808b8569ee29e813e339963d",
+  "faciemRuntimeSourceBaseline": "52853a83b5db11cd85c63abe65f49e96db893599",
+  "consumer": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer",
+  "unity": "6000.6.5f1 (3ff58d469c8a)",
+  "cli": "1.0.0-beta.13",
+  "testFramework": "1.8.0",
+  "nunitBuiltin": "2.1.0",
+  "review": {
+    "completeDiffFiles": [
+      "Documentation~/evidence/u1a/.gitattributes",
+      "Documentation~/evidence/u1a/commands.json",
+      "Documentation~/evidence/u1a/consumer-packages-lock.json",
+      "Documentation~/evidence/u1a/core-editmode-cases.tsv",
+      "Documentation~/evidence/u1a/core-editmode.json",
+      "Documentation~/evidence/u1a/core-editmode.xml",
+      "Documentation~/evidence/u1a/format.txt",
+      "Documentation~/evidence/u1a/formatting-project.csproj.txt",
+      "Documentation~/evidence/u1a/initial-helper-compile-error.json",
+      "Documentation~/evidence/u1a/initial-helper-compile-error.txt",
+      "Documentation~/evidence/u1a/package-contract-tests.txt",
+      "Documentation~/evidence/u1a/player-assembly-metadata.json",
+      "Documentation~/evidence/u1a/player-build.json",
+      "Documentation~/evidence/u1a/player-metadata-probe.cs.txt",
+      "Documentation~/evidence/u1a/player-metadata-probe.csproj.txt",
+      "Documentation~/evidence/u1a/player-warning.txt",
+      "Documentation~/u1a-standalone-utility.md",
+      "Documentation~/u1a-validation.json",
+      "Editor/Sim.Utility.Editor.asmdef",
+      "Integrations~/FaciemEditor/Editor.meta",
+      "Integrations~/FaciemEditor/Editor/SerializableGuidEditorOfT.cs",
+      "Integrations~/FaciemEditor/Editor/SerializableGuidEditorOfT.cs.meta",
+      "Integrations~/FaciemEditor/Editor/SerializableGuidEditorStyles.uss",
+      "Integrations~/FaciemEditor/Editor/SerializableGuidEditorStyles.uss.meta",
+      "Integrations~/FaciemEditor/Editor/SerializableGuidEditorView.uxml",
+      "Integrations~/FaciemEditor/Editor/SerializableGuidEditorView.uxml.meta",
+      "Integrations~/FaciemEditor/Editor/SerializableGuidEditorViewModel.cs",
+      "Integrations~/FaciemEditor/Editor/SerializableGuidEditorViewModel.cs.meta",
+      "Integrations~/FaciemEditor/Editor/Sim.Utility.Faciem.Editor.asmdef",
+      "Integrations~/FaciemEditor/Editor/Sim.Utility.Faciem.Editor.asmdef.meta",
+      "Integrations~/FaciemEditor/README.md",
+      "Integrations~/FaciemEditor/Tests.meta",
+      "Integrations~/FaciemEditor/Tests/Editor.meta",
+      "Integrations~/FaciemEditor/Tests/Editor/GuidInspectorIntegrationTests.cs",
+      "Integrations~/FaciemEditor/Tests/Editor/GuidInspectorIntegrationTests.cs.meta",
+      "Integrations~/FaciemEditor/Tests/Editor/Sim.Utility.Faciem.Editor.Tests.asmdef",
+      "Integrations~/FaciemEditor/Tests/Editor/Sim.Utility.Faciem.Editor.Tests.asmdef.meta",
+      "Integrations~/FaciemEditor/package.json",
+      "README.md",
+      "Runtime/SerializableGuid.cs",
+      "Tests.meta",
+      "Tests/Editor.meta",
+      "Tests/Editor/SerializableGuidTests.cs",
+      "Tests/Editor/SerializableGuidTests.cs.meta",
+      "Tests/Editor/Sim.Utility.Editor.Tests.asmdef",
+      "Tests/Editor/Sim.Utility.Editor.Tests.asmdef.meta",
+      "Tools~/test_package_contract.py",
+      "Validation~/CoreConsumer/.gitignore",
+      "Validation~/CoreConsumer/Assets/Editor/UtilityPlayerSmokeBuild.cs",
+      "Validation~/CoreConsumer/Assets/Editor/UtilityPlayerSmokeBuild.cs.meta",
+      "Validation~/CoreConsumer/Assets/GuidSmokeComponent.cs",
+      "Validation~/CoreConsumer/Assets/GuidSmokeComponent.cs.meta",
+      "Validation~/CoreConsumer/Packages/manifest.json",
+      "Validation~/CoreConsumer/ProjectSettings/ProjectVersion.txt",
+      "package.json"
+    ],
+    "completeDiffFileCount": 55,
+    "utf8LfDiffSha256": "83ee889c07f909fca9740388f8ba0a0418639b596d367d589a09d1026ae9c3ae",
+    "sourceChangesAfterReview": "documentation/evidence only; no C#/asmdef/package/test changes",
+    "coverageFinding": "Five tests inspect template/control presence, VM data/parsing and assembly identity, not a complete bound Inspector editing/command/style acceptance campaign"
+  },
+  "attempt": {
+    "count": 1,
+    "route": "isolated Unity CLI",
+    "useGraphics": false,
+    "timeoutSeconds": 600,
+    "selection": {
+      "testFilters": [
+        "Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests"
+      ],
+      "testCategories": []
+    },
+    "reportFormats": [
+      "json",
+      "nunit"
+    ],
+    "outcome": "run_error",
+    "retainedTestRecords": 0,
+    "authoredCases": 5,
+    "caseOutcomes": "not available; all five unexecuted, not failed/skipped/passed",
+    "xmlExpected": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer\\Logs\\unity-tests-editmode-20261017T225750123Z-04960d50b4cc4e99.xml",
+    "xmlExists": false,
+    "log": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer\\Logs\\unity-tests-editmode-20261017T225750123Z-04960d50b4cc4e99.log",
+    "logSha256": "458a300f061ff2a383988f2845186746632d39456d8d40477326d9d0b989bc87",
+    "logBytes": 128751,
+    "artifactInspection": "exact current-run normalized/XML/log paths inspected once, latestFromLogs=false; failed inspection, uncertain test outcome",
+    "diagnosticDistinctLines": 42,
+    "diagnosticCodes": {
+      "CS0246": 12,
+      "CS1069": 30
+    },
+    "observedBlockers": [
+      "Faciem Shared CS0246: R3/DisposableBag/Observable/Subject missing from the resolved consumer closure",
+      "CS1069: UIElementsModule missing; this minimal consumer omitted com.unity.modules.uielements, so do not attribute all errors to Faciem"
+    ],
+    "stop": "No further Unity attempts, alternative backend, framework patch, fake assembly, dependency additions or production changes"
+  },
+  "resolution": {
+    "packageCount": 14,
+    "acyclic": true,
+    "coreUtilityDependencies": {},
+    "integrationAssemblyReferences": {
+      "GUID:73131d858481d53408ae35d0e5a78385": "Sim.Utility",
+      "GUID:0256ac6985bf6624da798665f1d64436": "Sim.Faciem",
+      "GUID:c68e2f7abac45cd409bf1e2a2e91700e": "Sim.Faciem.Shared"
+    },
+    "integrationEditorOnly": true,
+    "registeredCacheFolders": {
+      "com.sim.utility": "com.sim.utility@04ea8da9accd",
+      "com.sim.utility.faciem.editor": "com.sim.utility.faciem.editor@624f575c6ee7",
+      "com.sim.faciem": "com.sim.faciem@7c7c9fc8a1a4"
+    },
+    "optionalCacheFingerprint": "624f575c6ee7cf56bf09acaccabce52a9902111b",
+    "cacheFingerprintIsNotGitRevision": true,
+    "integrationFilesCompared": [
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor.meta",
+        "cacheSha256": "779a82bc6d9ba2d2ab45d8e53c997e9a9d6b7029c6e5cbda21c93b53fbdf1406",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/SerializableGuidEditorOfT.cs",
+        "cacheSha256": "b6ece88ec651e4b2e673e544ee8039bb47fc0677ff4e6f67d82a7c715bf7c184",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/SerializableGuidEditorOfT.cs.meta",
+        "cacheSha256": "31ce5802badd177d89ec0c233ee384b0eb913a3caf0eab88b1f1daceccf40889",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/SerializableGuidEditorStyles.uss",
+        "cacheSha256": "de739180fef145e95ad63e5647a61fc1da44ab5f38f1e37284d78fe7e3a329ac",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/SerializableGuidEditorStyles.uss.meta",
+        "cacheSha256": "482b81e38eb25205fcf2964f143b75e7a2c9ddc27b8239697b4250d2dcc1d51e",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/SerializableGuidEditorView.uxml",
+        "cacheSha256": "9c1a9b7358041f33d1144e1e605ea9b52a3eb84c4ddcb3a1b931e077c462b476",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/SerializableGuidEditorView.uxml.meta",
+        "cacheSha256": "9bffb6332f3055e629842803b3bcf605cf2ca99864db24676977817296cca885",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/SerializableGuidEditorViewModel.cs",
+        "cacheSha256": "d2dbe905598741729283cc90577736b17ddbfac86a59c601cec2ba7d616c43e7",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/SerializableGuidEditorViewModel.cs.meta",
+        "cacheSha256": "2dd9825f7f20012f678ff7c75f7b9faabc1c7b9168f769339e26e94d46a33bba",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/Sim.Utility.Faciem.Editor.asmdef",
+        "cacheSha256": "e8950dab8943ef9435cc5c6b29e2453a8a984f4ae32048de2594dd50dc470a81",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Editor/Sim.Utility.Faciem.Editor.asmdef.meta",
+        "cacheSha256": "5313b8b30f88ca914fed53cc10bab00765e2321ac2c603bb121b19b21f7ab9bd",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/README.md",
+        "cacheSha256": "0c5d27880b9fba0f5039293fde43d4d6bd33e26d729628b835d38989175c3036",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Tests.meta",
+        "cacheSha256": "6b85c33c09bee38d37915fbf6984a676f81605c3f7a4cc265705d88e4dec5265",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Tests/Editor.meta",
+        "cacheSha256": "6a816574713795dfaf21abe6cd16058a6fa9be6cc8bc238ef6b232c9a3226e5d",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Tests/Editor/GuidInspectorIntegrationTests.cs",
+        "cacheSha256": "681d97e280887479d14c681b96569975057998b3ef351e85c2f56d3ed359bc09",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Tests/Editor/GuidInspectorIntegrationTests.cs.meta",
+        "cacheSha256": "7a21a05ffd07aaba667c344973da40c63a8aa596f91fdee3d8dc907cfd0983e4",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Tests/Editor/Sim.Utility.Faciem.Editor.Tests.asmdef",
+        "cacheSha256": "5c539809140ecf2a7d4f26bc9e98e78a0f2b398b59fb768ab1d403c4ccfcf64f",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/Tests/Editor/Sim.Utility.Faciem.Editor.Tests.asmdef.meta",
+        "cacheSha256": "50e55a12e602257a42bebb25ea97a3f5e0f2d4febdf67d2c357f15ba89ca3408",
+        "comparison": "identical after CRLF/LF normalization"
+      },
+      {
+        "sourcePath": "Integrations~/FaciemEditor/package.json",
+        "cacheSha256": "7b61a5a45ce9d0dbb44f3850e6425f2de0b5b7af57336c94c186b264456b623d",
+        "comparison": "all declared fields identical; generated UPM _fingerprint excluded"
+      }
+    ],
+    "packagePathsConfirmed": "UPM resolved/registered/extracted pinned root and subpackage; source/meta paths checked, not AssetDatabase GUIDToAssetPath or instantiated UXML",
+    "declaredAddressables": "2.8.0",
+    "resolvedAddressables": "2.11.2",
+    "addressablesExactDeclaredVersionValidated": false,
+    "transitiveVersionSelection": "UPM selected registry versions automatically from declared minimums; no manifest upgrade/edit or acceptance of drift. Full lockfile retained.",
+    "uiElementsModuleEnabled": false
+  },
+  "coreEvidence": {
+    "freshUnityTests": "not run; no relevant source/metadata changes",
+    "freshPlayerBuild": "not run; no relevant source/metadata changes",
+    "historicalTests": "12/12 passed at validated implementation commit 688bb7f88baa0389258a254202e8eef3ac1974fb; original hashes/artifact bytes rechecked",
+    "historicalPlayer": "Windows x64 Mono build passed, 0 errors/1 existing CS0414 warning, actual Utility DLL refs netstandard + UnityEngine.CoreModule; not a fresh build",
+    "freshStaticContracts": {
+      "passed": 8,
+      "failed": 0,
+      "exitCode": 0
+    }
+  },
+  "notEstablished": [
+    "optional integration Editor compilation",
+    "five integration case outcomes",
+    "native AssetDatabase view/style GUID path resolution",
+    "UXML instantiation and stylesheet application",
+    "bound Inspector display/two-way editing/invalid-input restoration",
+    "command dispatch/regeneration/permissions",
+    "Inspector serialized GUID editing and lifecycle",
+    "player compatibility of Faciem",
+    "exact Addressables 2.8.0 environment"
+  ],
+  "mergeGate": "Resolve Faciem dependency closure in its separate approved scope, explicitly enable/document UIElements and intentionally pin/approve transitive environment; validate a compatible isolated consumer, run all five cases and real bound Inspector scenarios, then independent review. Do not merge now.",
+  "preservation": {
+    "approvedPackageSplit": true,
+    "runtimeGuidSerialization": "unchanged",
+    "midnightWager": "unchanged/no Unity operations",
+    "faciemSource": "unchanged",
+    "merge": false,
+    "deployment": false
+  },
+  "evidenceCopies": {
+    "consumer-manifest.json": {
+      "original": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer\\Packages\\manifest.json",
+      "sha256": "8e45d9362abf511886b9b66b016f3aba5cb1bc559598c54b594fd20a74c0c214"
+    },
+    "consumer-packages-lock.json": {
+      "original": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer\\Packages\\packages-lock.json",
+      "sha256": "a33405dcf1394687ac5d074ace13be398212d62acee64f71558f1de4f051e8ab"
+    },
+    "consumer-project-version.txt": {
+      "original": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer\\ProjectSettings\\ProjectVersion.txt",
+      "sha256": "b3402f9d37aab37e8ad7676fff8d2f3b1333d857d2fade3fae888482e59d42ad"
+    },
+    "run-error.json": {
+      "original": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer\\Logs\\pi-unity-tests-editmode-20261017T225812059Z-5a07dab341f747e28d4989fd7a6e2a13.json",
+      "sha256": "eb80e1a7e288798e1d7c5588955ef07c1198e3c573990ed02caab421f6fa7a94"
+    },
+    "resolved-integration-package.json": {
+      "original": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer\\Library\\PackageCache\\com.sim.utility.faciem.editor@624f575c6ee7\\package.json",
+      "sha256": "7b61a5a45ce9d0dbb44f3850e6425f2de0b5b7af57336c94c186b264456b623d"
+    },
+    "resolved-faciem-package.json": {
+      "original": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\u1a-final-review\\Consumer\\Library\\PackageCache\\com.sim.faciem@7c7c9fc8a1a4\\package.json",
+      "sha256": "e22864bad45f6bf7d37dc1644c7483e62c4af6e090c654b95f90f86ae082787b"
+    }
+  }
+}

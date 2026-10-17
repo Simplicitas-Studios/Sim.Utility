@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "com.sim.utility": "https://github.com/Simplicitas-Studios/Sim.Utility.git#04ea8da9accd0537860da7d66f3eb7d47d8ca83c",
+    "com.sim.utility.faciem.editor": "https://github.com/Simplicitas-Studios/Sim.Utility.git?path=/Integrations~/FaciemEditor#04ea8da9accd0537860da7d66f3eb7d47d8ca83c",
+    "com.sim.faciem": "https://github.com/Simplicitas-Studios/Sim.Faciem.git#7c7c9fc8a1a41477808b8569ee29e813e339963d",
+    "com.unity.test-framework": "1.8.0"
+  },
+  "testables": [
+    "com.sim.utility",
+    "com.sim.utility.faciem.editor"
+  ]
+}

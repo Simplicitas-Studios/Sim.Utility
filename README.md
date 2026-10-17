@@ -1,6 +1,9 @@
 # Sim.Utility
 Utility Framework for Simplicitas Unity Packages
 
+**Not merge-ready:** the [final pinned integration attempt](Documentation~/u1a-final-integration-validation.md)
+failed compilation before its five tests could execute. No integration acceptance is claimed.
+
 The core `com.sim.utility` package is independent of Sim.Faciem. Runtime models,
 GUID serialization, general Editor helpers and code generation remain in core.
 
