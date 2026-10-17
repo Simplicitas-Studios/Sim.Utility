@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Utility-u1-audit/Runtime/SerializableGuid.cs" />
+    <Compile Include="C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Utility-u1-audit/Integrations~/FaciemEditor/Editor/SerializableGuidEditorOfT.cs" />
+    <Compile Include="C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Utility-u1-audit/Tests/Editor/SerializableGuidTests.cs" />
+    <Compile Include="C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Utility-u1-audit/Integrations~/FaciemEditor/Tests/Editor/GuidInspectorIntegrationTests.cs" />
+    <Compile Include="C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Utility-u1-audit/Validation~/CoreConsumer/Assets/GuidSmokeComponent.cs" />
+    <Compile Include="C:/Users/DPast/Documents/Projects/ReviewWorktrees/Sim.Utility-u1-audit/Validation~/CoreConsumer/Assets/Editor/UtilityPlayerSmokeBuild.cs" />
+  </ItemGroup>
+</Project>

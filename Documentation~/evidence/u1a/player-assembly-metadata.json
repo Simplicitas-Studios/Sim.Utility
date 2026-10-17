@@ -1,0 +1,7 @@
+{
+  "references": [
+    "netstandard",
+    "UnityEngine.CoreModule"
+  ],
+  "forbiddenTypes": []
+}
