@@ -1,0 +1,16 @@
+{
+  "name": "com.sim.utility.faciem.editor",
+  "version": "1.0.0-alpha.1",
+  "displayName": "Sim.Utility Faciem Editor Integration",
+  "description": "Optional Faciem-backed GUID inspectors for Sim.Utility.",
+  "unity": "6000.0",
+  "dependencies": {
+    "com.sim.utility": "1.0.0-alpha.1",
+    "com.sim.faciem": "1.0.0-alpha.1"
+  },
+  "author": {
+    "name": "Simplicitas-Studios",
+    "url": "https://github.com/Simplicitas-Studios"
+  },
+  "_fingerprint": "624f575c6ee7cf56bf09acaccabce52a9902111b"
+}

@@ -1,0 +1,13 @@
+name	result	duration_seconds
+Sim.Utility.Tests.SerializableGuidTests.CopyConstructorPreservesIndependentSerializedValue	Passed	0.009687
+Sim.Utility.Tests.SerializableGuidTests.DefaultConstructorRepresentsEmptyGuid	Passed	0.000252
+Sim.Utility.Tests.SerializableGuidTests.EmptySerializedStringRepresentsEmptyGuid(null)	Passed	0.000237
+Sim.Utility.Tests.SerializableGuidTests.EmptySerializedStringRepresentsEmptyGuid("")	Passed	0.000084
+Sim.Utility.Tests.SerializableGuidTests.GenericSerializedPropertyWritePreservesTheGuidStringSchema	Passed	0.004095
+Sim.Utility.Tests.SerializableGuidTests.GuidConstructorPreservesValueAndEquality	Passed	0.001052
+Sim.Utility.Tests.SerializableGuidTests.JsonPreservesTheStoredStringFormat	Passed	0.000176
+Sim.Utility.Tests.SerializableGuidTests.JsonRetainsTheOriginalFieldNameAndExcludesParsedCaches	Passed	0.001367
+Sim.Utility.Tests.SerializableGuidTests.MalformedStringStillFailsWhenRead	Passed	0.001758
+Sim.Utility.Tests.SerializableGuidTests.NullCopyIsRejected	Passed	0.000330
+Sim.Utility.Tests.SerializableGuidTests.SerializedPropertyConstructorAndGenericReadRemainAvailableInEditor	Passed	0.000511
+Sim.Utility.Tests.SerializableGuidTests.SetGuidInvalidatesTheParsedValue	Passed	0.000205

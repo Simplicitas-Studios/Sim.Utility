@@ -1,0 +1,40 @@
+{
+  "project": "Validation~/CoreConsumer",
+  "pathBase": "absolute path to the reviewed Sim.Utility checkout",
+  "testAttempts": {
+    "count": 2,
+    "sameToolArguments": {
+      "tool": "unity_run_tests",
+      "testPlatform": "EditMode",
+      "testFilters": ["Sim.Utility.Tests.SerializableGuidTests"],
+      "execution": "isolated",
+      "timeoutSeconds": 600,
+      "reportFormats": ["json", "nunit"],
+      "useGraphics": false
+    },
+    "first": "No XML/zero executed tests due to helper CS0266; not a passing or failed GUID test run.",
+    "second": "After correcting the two helper counter field types to int, 12/12 passed."
+  },
+  "playerBuild": {
+    "tool": "unity_launch_batchmode",
+    "args": ["-executeMethod", "UtilityPlayerSmokeBuild.Build", "-buildTarget", "Win64", "-quit"],
+    "useGraphics": false,
+    "timeoutSeconds": 600,
+    "launcher": "auto",
+    "logFilePath": "<absolute-consumer>/Logs/u1a-player-build.log",
+    "tailLog": false,
+    "resolvedRoute": "Unity CLI, declared Unity 6000.6.5f1",
+    "exitCode": 0
+  },
+  "staticContracts": "python Tools~/test_package_contract.py",
+  "formatter": "dotnet format whitespace <Formatting.csproj> --verify-no-changes --verbosity minimal",
+  "formatterProject": "formatting-project.csproj.txt contains the exact six source inputs; adjust checkout prefix when reproducing",
+  "actualPlayerAssemblyAudit": {
+    "method": "System.Reflection.PortableExecutable.PEReader / System.Reflection.Metadata.MetadataReader; no assembly execution",
+    "source": "player-metadata-probe.cs.txt",
+    "project": "player-metadata-probe.csproj.txt",
+    "command": "dotnet run --project <Host.csproj> -- <consumer>/Builds/UtilitySmoke_Data/Managed/Sim.Utility.dll",
+    "result": "player-assembly-metadata.json"
+  },
+  "notRun": ["optional integration compile/tests/visible Inspector", "PlayMode", "IL2CPP", "player executable"]
+}

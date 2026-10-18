@@ -1,0 +1,2 @@
+Assets\Editor\UtilityPlayerSmokeBuild.cs(42,27): error CS0266: Cannot implicitly convert type 'int' to 'uint'. An explicit conversion exists (are you missing a cast?)
+Assets\Editor\UtilityPlayerSmokeBuild.cs(43,29): error CS0266: Cannot implicitly convert type 'int' to 'uint'. An explicit conversion exists (are you missing a cast?)

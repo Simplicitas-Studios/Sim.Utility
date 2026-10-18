@@ -1,6 +1,8 @@
 ﻿using System;
 using Sim.Utility;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 namespace Sim.Dispositio.Shared

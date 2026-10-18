@@ -1,0 +1,20 @@
+{
+    "name": "Sim.Utility.Faciem.Editor.Tests",
+    "references": [
+        "Sim.Utility.Faciem.Editor",
+        "GUID:73131d858481d53408ae35d0e5a78385",
+        "GUID:0256ac6985bf6624da798665f1d64436",
+        "Sim.Faciem.Controls"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "autoReferenced": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "R3.dll"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}

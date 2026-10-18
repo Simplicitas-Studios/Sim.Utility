@@ -1,0 +1,14 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Reflection.Metadata;
+using System.Reflection.PortableExecutable;
+using System.Text.Json;
+
+using FileStream stream = File.OpenRead(args[0]);
+using var pe = new PEReader(stream);
+MetadataReader reader = pe.GetMetadataReader();
+string[] references = reader.AssemblyReferences.Select(handle => reader.GetString(reader.GetAssemblyReference(handle).Name)).OrderBy(name => name).ToArray();
+string[] forbiddenTypes = reader.TypeReferences.Select(handle => reader.GetString(reader.GetTypeReference(handle).Namespace)).Where(name => name.StartsWith("UnityEditor", StringComparison.Ordinal) || name.StartsWith("Sim.Faciem", StringComparison.Ordinal)).Distinct().ToArray();
+Console.WriteLine(JsonSerializer.Serialize(new { references, forbiddenTypes }));
+return forbiddenTypes.Length == 0 && !references.Any(name => name.StartsWith("UnityEditor", StringComparison.Ordinal) || name.StartsWith("Sim.Faciem", StringComparison.Ordinal)) ? 0 : 1;

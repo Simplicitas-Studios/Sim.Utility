@@ -1,0 +1,15 @@
+/Library/
+/Temp/
+/Obj/
+/Logs/
+/Builds/
+/UserSettings/
+/.vs/
+/Packages/packages-lock.json
+/ProjectSettings/*
+!/ProjectSettings/ProjectVersion.txt
+/Assets/Smoke.unity*
+/Assets/Editor.meta
+/*.csproj
+/*.sln
+/*.slnx
