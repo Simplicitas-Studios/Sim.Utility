@@ -79,7 +79,10 @@ namespace Sim.Utility.Editor
                     _obj = AssetDatabase.LoadAssetAtPath(path, typeof(DefaultAsset));
                     _guid.stringValue = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(_obj));
                 }
-                else Debug.LogError("The path must be in the Assets folder");
+                else
+                {
+                    Debug.LogError("The path must be in the Assets folder");
+                }
             }
         }
     }
