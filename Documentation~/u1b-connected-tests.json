@@ -1,0 +1,62 @@
+{
+  "verdict": "Editor tests unblocked; full integration/player acceptance incomplete; not merge-ready",
+  "utilityStart": "d57864989f8b85332ebb8093da47602e68b39132",
+  "faciemSourceAtRun": "3eb408fe plus current documented U1b source edits in local worktree",
+  "consumer": "C:\\Users\\DPast\\Documents\\Projects\\ReviewWorktrees\\Sim.Faciem-assessment\\Validation~\\CleanConsumer",
+  "unity": "6000.6.5f1",
+  "pipeline": "0.8.0-exp.1",
+  "finalRuns": [
+    {
+      "phase": "final-integration",
+      "artifact": "pi-unity-tests-editmode-20261018T093702691Z-77bc6e25e6b84b559e3eb146d0755186.json",
+      "sha256": "fccad8776e80bb50a5f815a12eb334f7daf130a856e6abd714c04aea646a655b",
+      "selection": {
+        "testFilters": [
+          "Sim.Utility.Faciem.Tests.GuidInspectorIntegrationTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.236
+    },
+    {
+      "phase": "final-core",
+      "artifact": "pi-unity-tests-editmode-20261018T093724136Z-74b9ecd20e844ae09446b224321bb7e1.json",
+      "sha256": "5d3715542af8e2b9b62827526d2be7401df99ee33d9f00ea4cf04dcbb50c7525",
+      "selection": {
+        "testFilters": [
+          "Sim.Utility.Tests.SerializableGuidTests"
+        ],
+        "testCategories": []
+      },
+      "summary": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "durationSeconds": 11.436
+    }
+  ],
+  "distinctPassed": 17,
+  "newChange": "Explicit R3.dll precompiled test assembly reference; original five cases/assertions restored unchanged; user unused-import removal retained.",
+  "coreRuntimeOrSchemaChanges": false,
+  "staticContractsPassed": 8,
+  "historicalCorePlayerBuildNotRerun": true,
+  "faciemCombinedPlayerAttempt": {
+    "attemptedPreparation": true,
+    "buildPipelineInvoked": false,
+    "compileOrBuildPass": false,
+    "reason": "untitled unsaved current scene prevents additive scene creation",
+    "nativePlayerExecutableProducedOrLaunched": false,
+    "noRetry": true,
+    "noFallback": true,
+    "scenePreserved": true
+  },
+  "interactiveInspectorAcceptanceEstablished": false
+}
